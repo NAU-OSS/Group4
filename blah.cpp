@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
-#include <cctype>
+#include <cctype.h>
 
 bool characteristic(char numString[], int& c);
 bool mantissa(char numString[], int& numerator, int& denominator);
