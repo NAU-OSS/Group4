@@ -14,26 +14,44 @@ int main()
     if(characteristic(number, c) && mantissa(number, n, d))
     {
         //do some math with c, n, and d
-        printf("test true \n");
-        return true;
+        //printf("test true \n");
+        printf("Characteristic: %i\n", c);
     }
     else
     {
         //handle the error on input
-        printf("test false \n");
-        return false;    
+        //printf("test false \n");   
     }
 }    
     
 bool characteristic(char numString[], int& c)
 {
     //turn char into int
-    int number = atoi(numString);
-    printf("%i", number);
-    return true;
+    c = atoi(numString);
+    //printf("%i", c);
+    return c;
 }
 
 bool mantissa(char numString[], int& numerator, int& denominator)
 {
-    return false;
+    float fnumber = atof(numString);
+    int inumber = atoi(numString);
+    //printf("%f and %i\n", fnumber, inumber);
+    //handle negative numbers correctly
+    if (fnumber && inumber > 0)
+    {
+        float decimal = fnumber - inumber;
+        //printf ("%.3f\n", decimal);
+    }
+    else
+    {
+        float decimal = -(fnumber) - -(inumber);
+        //printf ("%f\n", decimal);
+    }
+    
+    //where n is the number of places after the decimal,
+    //take this decimal and multiply it by 10^n to get the numberator
+    //and 10^n is the denominator
+    
+    return true;
 }
