@@ -17,7 +17,9 @@ int main()
     {
         //do some math with c, n, and d
         //printf("test true \n");
-        printf("Characteristic: %i\n", c);
+        printf("The characteristic is: %i\n", c);
+        printf("The mantissa numerator is: %i\n", n);
+
     }
     else
     {
@@ -37,35 +39,28 @@ bool characteristic(char numString[], int& c)
 bool mantissa(char numString[], int& numerator, int& denominator)
 {
     char mantissa_value_string[100];
-
     char mantissa_buffer[100];
-
     int currentIndex = 0;
-
     int offset = 0;
 
-    while( numString[currentIndex] != '.')
+    while (numString[currentIndex] != '.')
     {
         mantissa_buffer[currentIndex] = numString[currentIndex];
-
         currentIndex++;
     }
 
     currentIndex++;
-
     offset = currentIndex;
 
-    while ( numString[currentIndex] != '\0')
+    while (numString[currentIndex] != '\0')
     {
-      mantissa_value_string[currentIndex - offset ] = numString[ currentIndex ];
-
+      mantissa_value_string[currentIndex - offset] = numString[currentIndex];
       currentIndex++;
     }
 
+    numerator = atoi(mantissa_value_string);
+    //printf("The mantissa numerator is: %i\n", numerator);
 
-    int mantissa_value = atoi(mantissa_value_string);
-
-    printf("The mantissa is %i\n", mantissa_value);
-
-    return true;
+    return numerator;
 }
+
