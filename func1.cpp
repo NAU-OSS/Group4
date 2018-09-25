@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <iostream>
+#include <cstring>
+#include <cstdlib>
 
 bool characteristic(char numString[], int& c);
 bool mantissa(char numString[], int& numerator, int& denominator);
@@ -34,24 +36,36 @@ bool characteristic(char numString[], int& c)
 
 bool mantissa(char numString[], int& numerator, int& denominator)
 {
-    float fnumber = atof(numString);
-    int inumber = atoi(numString);
-    //printf("%f and %i\n", fnumber, inumber);
-    //handle negative numbers correctly
-    if (fnumber && inumber > 0)
+    char mantissa_value_string[100];
+
+    char mantissa_buffer[100];
+
+    int currentIndex = 0;
+
+    int offset = 0;
+
+    while( numString[currentIndex] != '.')
     {
-        float decimal = fnumber - inumber;
-        //printf ("%.3f\n", decimal);
+        mantissa_buffer[currentIndex] = numString[currentIndex];
+
+        currentIndex++;
     }
-    else
+
+    currentIndex++;
+
+    offset = currentIndex;
+
+    while ( numString[currentIndex] != '\0')
     {
-        float decimal = -(fnumber) - -(inumber);
-        //printf ("%f\n", decimal);
+      mantissa_value_string[currentIndex - offset ] = numString[ currentIndex ];
+
+      currentIndex++;
     }
-    
-    //where n is the number of places after the decimal,
-    //take this decimal and multiply it by 10^n to get the numerator
-    //and 10^n is the denominator
-    
+
+
+    int mantissa_value = atoi(mantissa_value_string);
+
+    printf("The mantissa is %i\n", mantissa_value);
+
     return true;
 }
