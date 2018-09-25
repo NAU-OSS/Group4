@@ -50,7 +50,7 @@ bool mantissa(char numString[], int& numerator, int& denominator)
     }
     
     //where n is the number of places after the decimal,
-    //take this decimal and multiply it by 10^n to get the numberator
+    //take this decimal and multiply it by 10^n to get the numerator
     //and 10^n is the denominator
     
     return true;
