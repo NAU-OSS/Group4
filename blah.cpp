@@ -36,7 +36,7 @@ int main()
         // Checks if there is another symbol besides a digit or a + - symbol
         for (int i = 0; i < strlen(number); i = i + 1)
         { 
-          if(number >= '0' || number <= '9' && number != '+' && number != '-')
+          if(number[i] >= '0' || number[i] <= '9' && number[i] != '+' && number[i] != '-')
           {
                 printf("test false");
           }
