@@ -4,63 +4,61 @@
 #include <cstring>
 #include <cstdlib>
 
-bool characteristic(char numString[], int& c);
-bool mantissa(char numString[], int& numerator, int& denominator);
-
-int main()
+bool characteristic(char num_string[], int& c)
 {
-    char number[] = "123.456";
-    int c, n, d;
+  // turn char into int
+  c = atoi(num_string);
 
-    //if the conversion from C string to integers can take place
-    if(characteristic(number, c) && mantissa(number, n, d))
-    {
-        //do some math with c, n, and d
-        //printf("test true \n");
-        printf("The characteristic is: %i\n", c);
-        printf("The mantissa numerator is: %i\n", n);
-
-    }
-    else
-    {
-        //handle the error on input
-        //printf("test false \n");   
-    }
-}    
-    
-bool characteristic(char numString[], int& c)
-{
-    //turn char into int
-    c = atoi(numString);
-    //printf("%i", c);
-    return c;
+  // printf("%i", c);
+  return c;
 }
 
-bool mantissa(char numString[], int& numerator, int& denominator)
+bool mantissa(char num_string[], int& numerator, int& denominator)
 {
-    char mantissa_value_string[100];
-    char mantissa_buffer[100];
-    int currentIndex = 0;
-    int offset = 0;
+  // declaration of variables
+  char mantissa_value_string[100];
+  char mantissa_buffer[100];
+  int curr_index = 0;
+  int offset = 0;
 
-    while (numString[currentIndex] != '.')
-    {
-        mantissa_buffer[currentIndex] = numString[currentIndex];
-        currentIndex++;
-    }
+  while (num_string[curr_index] != '.')
+  {
+    mantissa_buffer[curr_index] = num_string[curr_index];
+    curr_index++;
+  }
 
-    currentIndex++;
-    offset = currentIndex;
+  // increments index
+  curr_index++;
 
-    while (numString[currentIndex] != '\0')
-    {
-      mantissa_value_string[currentIndex - offset] = numString[currentIndex];
-      currentIndex++;
-    }
+  // resets offset
+  offset = curr_index;
 
-    numerator = atoi(mantissa_value_string);
-    //printf("The mantissa numerator is: %i\n", numerator);
+  // loops to end of char
+  while (num_string[curr_index] != '\0')
+  {
+    mantissa_value_string[curr_index - offset] = num_string[curr_index];
+    curr_index++;
+  }
 
-    return numerator;
+  numerator = atoi(mantissa_value_string);
+  // printf("The mantissa numerator is: %i\n", numerator);
+
+  return numerator;
 }
 
+void valid(char num_string[])
+{
+  // checks if there is another symbol besides a digit or a + - symbol
+  for (int i = 0; i < strlen(num_string); i = i + 1)
+  {
+    // loops through number and checks if there are letter or symbols not including + or -
+    if(num_string[i] >= '0' || num_string[i] <= '9')
+    {
+      if (num_string[i] != '-' && numStsring[i] != '+')
+      {
+        // declares false
+        printf("test false");
+      }
+    }
+  }
+}
