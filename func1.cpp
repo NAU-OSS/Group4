@@ -7,10 +7,42 @@
 bool characteristic(char num_string[], int& c)
 {
   // turn char into int
-  c = atoi(num_string);
+  int sign, start,  c;
+  int n = 0;
 
+  // checks if string is negative number
+  if num_string[0] == '-'
+  {
+    sign = -1;
+  }
+
+  // if negative starts at index 1
+  if (sign == -1)
+  {
+    start = 1;
+  }
+
+  // positive number index starts at 0
+  else
+  {
+    start = 0;
+  }
+
+  // loop to end of file
+  for (c = start; num_string[c] != '\0'; c++)
+  {
+    // conversion of string to int
+    n = n* 10 + a[c] - '0';
+  }
+
+  // if negative string; converts to negative number
+  if (sign == -1)
+  {
+    n = -n;
+  }
+  
   // printf("%i", c);
-  return c;
+  return n;
 }
 
 bool mantissa(char num_string[], int& numerator, int& denominator)
