@@ -12,7 +12,7 @@
 #include <cstring>
 #include <cstdlib>
 #include "func1.h"
-#include "func1.c"
+#include "func1.cpp"
 
 
 int main()
@@ -33,7 +33,7 @@ int main()
 
     else
     {
-      isValid(number)
+      isValid(number);
       return 0;
     }
 }

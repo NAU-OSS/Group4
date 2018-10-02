@@ -5,7 +5,7 @@
 // function declarations
 bool characteristic(char num_string[], int& c);
 bool mantissa(char num_string[], int& numerator, int& denominator);
-void valid(char num_string[]);
+void isValid(char num_string[]);
 
 
 // end of the header guard
