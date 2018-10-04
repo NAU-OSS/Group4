@@ -1,6 +1,6 @@
 # Project Title
 
-Project description goes here
+Welcome to the open source RPG. This is an open source software project that is free for use and contribution. The goal is to have a fun RPG that anyone can use for entertainment or foundation purposes for another RPG. We welcome new ideas and additions to story and characters. By opening the game design to the community we will hope to resolve bugs and find new ideas to implement that will increase the entertainment value of the project. 
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 What things you need to install the software and how to install them
 
-To contribute to this project, you will need the python 3.6 version. The use of other versions can result in different syntax requirments and may lead to the code not being compatible with what is already working. It is recomennded that you program in PyCharm from the company JetBrains. Another solution is to use IDLE with Python 3.6 but it is a simplistic system. 
+To contribute to this project, you will need the python 3.6 version. The use of other versions can result in different syntax requirements and may lead to the code not being compatible with what is already working. It is recommended that you program in PyCharm from the company JetBrains. Another solution is to use IDLE with Python 3.6 but it is a simplistic system. 
 
 ### Installing
 
@@ -30,9 +30,15 @@ For PyCharm
 4. Run the installer and open program when install is complete. 
 5. Open files that you will be working on. 
 6. If no interpreter is configured PyCharm will tell you by a display bar at the top of the code. Click on link that says 
-    "Configure Python Interpeter"
+    "Configure Python Interpreter"
 7. On the display that pops up find the python version installed in the drop down box and select apply. 
 Environment is all set up
+
+## Coding Conventions
+For this project we would like to follow similar guidelines to ensure consistency in the code. 
+ - Class names are capitalized
+ - Descriptive variable names
+ - Comments explaining logic
 
 ## Running the tests
 
