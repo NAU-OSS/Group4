@@ -63,10 +63,10 @@ Please read [CONTRIBUTING.md](https://github.com/NAU-OSS/Group4/blob/master/CONT
 We use ... for versioning. For the versions available, see ...
 
 ## Authors
-**Jasmine Mitchell** - *Current work*
-**Morgan Lovato** - *Current work*
-**Gwen Morris** - *Current and Initial work*
-**Kyle Kruger** - *Initial work*
+**Jasmine Mitchell** - *Current work*<br />
+**Morgan Lovato** - *Current work*<br />
+**Gwen Morris** - *Current and Initial work*<br />
+**Kyle Kruger** - *Initial work*<br />
 
 ## License
 
