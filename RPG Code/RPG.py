@@ -1,7 +1,7 @@
+# Open source RPG
 import random
 
-
-# Dice Roller Class used the ranint function to determine the total amount
+# Dice Roller Class used the randint function to determine the total amount
 # based on the number of sides of the dice.
 class DiceRoller:
     def roll(self, times, sides):
@@ -12,7 +12,6 @@ class DiceRoller:
         return total
 
 r = DiceRoller()
-
 
 class Attack:
     # initializes a new attack object.
