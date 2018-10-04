@@ -1,6 +1,6 @@
 # Project Title
 
-Welcome to the open source RPG.
+Project description goes here
 
 ## Getting Started
 
@@ -36,27 +36,19 @@ Environment is all set up
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+To be determined.
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+To be determined.
 
 ### And coding style tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+To be determined.
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To be determined.
 
 ## Built With
 
@@ -71,14 +63,15 @@ Please read [CONTRIBUTING.md](https://github.com/NAU-OSS/Group4/blob/master/CONT
 We use ... for versioning. For the versions available, see ...
 
 ## Authors
-Jasmine Mitchell
-Morgan Lovato
-Gwen Morris
-Inital creators: Kyle Kruger and Gwen Morris
+**Jasmine Mitchell** - *Current work*
+**Morgan Lovato** - *Current work*
+**Gwen Morris** - *Current and Initial work*
+**Kyle Kruger** - *Initial work*
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/NAU-OSS/Group4/blob/master/LICENSE) file for details.
 
 ## Acknowledgments
+* Thank you to all past and current contributors.
 
