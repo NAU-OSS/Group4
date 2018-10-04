@@ -1,6 +1,6 @@
 # Project Title
 
-Project description goes here
+Welcome to the open source RPG.
 
 ## Getting Started
 
@@ -33,16 +33,6 @@ For PyCharm
     "Configure Python Interpeter"
 7. On the display that pops up find the python version installed in the drop down box and select apply. 
 Environment is all set up
-
-```
-Give the example
-```
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
