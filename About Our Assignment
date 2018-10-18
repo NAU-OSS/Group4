@@ -21,8 +21,15 @@
 
 ## Finding an issue to work on
   
-  * Does the project use tags to identify easy tasks?
-  * If yes, which tag(s) is(are) used?
+  This project uses different tags under the Issues tab to track issues. The different tags include: 
+  - "entry editor" 
+  - "enhancement"
+  - "ui"
+  - "maintable"
+  - "good first issue"
+  - and more
+  
+  The "good first issue" tag is where begginers can start with something easy.
     
 ## Key personnel
 
