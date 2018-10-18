@@ -1,6 +1,6 @@
 # Details about <Name_of_project>
 
-## Governance Model
+## Governance Model 
 
   * Discuss the governance model of the project you are working on
 
