@@ -6,8 +6,8 @@ A contributor is able to modify or create new features that will then be reviewe
 
 ## Resources available (URLs)
 
-  Main language used: Java (94.4%)
-  Other technologies used: 
+  * Main language used: Java (94.4%)
+  * Other technologies used: 
   * Native BibTeX, Biblatex support, and shared SQL database 
   * Cite-as-you-write functionality for external applications such as Emacs, Kile, LyX, Texmaker, TeXstudio, Vim and WinEdt.
   * Format references in one of the many thousand built-in citation styles or create your own style
