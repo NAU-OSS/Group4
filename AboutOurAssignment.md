@@ -66,10 +66,8 @@ The code standards policies/guidelines available at https://github.com/JabRef/ja
     
 ## Submitting your contribution
     * Are there guidelines on how to create a submission? Where?
-    
-	There is a page on the github with the guidelines for committing available at 
-       https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md 
-       
+ There is a page on the github with the guidlines for committing available at https://github.com/JabRef/jabref/blob/master/CONTRIBUTING.md  
+
   * Is there any kind of checklist to follow?
      
      There is nothing that is in a checklist format but the link goes to a page that provides details in a paragraph format. 
